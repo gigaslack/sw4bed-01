@@ -15,8 +15,6 @@ namespace MyApp.Namespace
                 var url  = Environment.GetEnvironmentVariable("API_URL");
                 if(url is not null) {
                     client.BaseAddress = new Uri(url);                
-                } else {
-                    // client.BaseAddress = new Uri("api");
                 }
                 Breads = await client.GetFromJsonAsync<IList<Bread>>("breads");
             }
