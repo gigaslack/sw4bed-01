@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  api: 
+    image: "bvda/bakery-api"
+    ports:
+      - "6000:80"
+    expose:
+     - "80"
+  web:
+    image: "bvda/bakery-web"
+    ports:
+      - "5010:80"
+    environment:
+      - API_URL=http://api:80

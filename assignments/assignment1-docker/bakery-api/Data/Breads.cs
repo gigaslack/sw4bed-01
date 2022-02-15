@@ -1,4 +1,4 @@
-using bakery_api.Models;
+using bakery_data.Models;
 
 namespace bakery_api.Data;
 

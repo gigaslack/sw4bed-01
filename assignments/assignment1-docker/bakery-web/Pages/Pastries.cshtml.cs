@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-using bakery_api.Models;
+using bakery_data.Models;
 
 namespace MyApp.Namespace
 {
@@ -10,6 +10,8 @@ namespace MyApp.Namespace
         public IList<Pastry>? Pastries { get; set; } = new List<Pastry>();
         public async Task<IActionResult> OnGetAsync()
         {
+            // Don't do this! We'll get back to it in Lesson 13
+            // Leave me alone! I'm not made of time!
             using (HttpClient client = new HttpClient()) {
                 client.BaseAddress = new Uri("http://localhost:5066");
                 Pastries = await client.GetFromJsonAsync<IList<Pastry>>("pastries");

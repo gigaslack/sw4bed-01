@@ -1,4 +1,4 @@
-namespace bakery_api.Models;
+namespace bakery_data.Models;
 
 public class Bread
 {

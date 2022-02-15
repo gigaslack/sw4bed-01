@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using bakery_api.Models;
+using bakery_data.Models;
 using bakery_api.Data;
 
 namespace bakery_api.Controllers;

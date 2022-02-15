@@ -1,4 +1,4 @@
-using bakery_api.Models;
+using bakery_data.Models;
 
 namespace bakery_api.Data;
 
@@ -23,7 +23,7 @@ public static IList<Pastry> PastriesList { get; }
         Country = "United States",
         Description = "Sweet breakfast pastry",
         ImageURL = "https://upload.wikimedia.org/wikipedia/commons/c/cc/Bear_claw_pastry.JPG"
-      }
+      },
     };
   }
 }

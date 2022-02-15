@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <ItemGroup>
-    <ProjectReference Include="..\bakery-api\bakery-api.csproj" />
+    <ProjectReference Include="..\bakery-data\bakery-data.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
